@@ -1,27 +1,29 @@
 # code-vrij
 
-**Een repository voor intenties. Hier staat geen code, en hier komt geen code.**
+**Een repository voor bijgestelde bedoelingen. Hier staat geen code, en hier komt geen code.**
 
-Wat hier staat beschrijft wat iemand wilde: het doel, de omstandigheden, de keuzes onderweg, en wat er wel en niet bleek te werken. Uw eigen AI coding agent leest dat, praat met u over uw situatie, en bouwt er iets van dat bij u past. Geen clone, geen dependencies, geen "works on my machine".
+Wat hier staat is geoogst: het komt uit iets dat gebouwd is, waar mee gewerkt is, en dat onderweg is bijgestuurd. Niet het idee vooraf en niet het product achteraf, maar wat daartussen is geleerd over hoe je zegt wat je wilt.
 
-Wat een agent ermee maakt is van u, staat ergens anders, en mag weg zodra het niet meer past.
+Uw eigen AI coding agent leest dat, praat met u over uw situatie, en bouwt er iets van dat bij u past. Geen clone, geen dependencies, geen "works on my machine". Wat een agent ermee maakt is van u, staat ergens anders, en mag weg zodra het niet meer past.
 
 ## Het groeipad
 
-Een intentie is hier niet af zodra hij opgeschreven is. Hij doorloopt een weg, en die weg is de reden dat deze repository iets waard is.
+Elke oogst begint buiten deze repository. Iemand wil iets, zegt dat tegen een agent, en krijgt iets terug. Dan begint het echte werk: het klopt niet helemaal, dus de opdracht wordt bijgesteld. En nog eens. En nog eens.
 
-Het begint met een **voornemen**: dit willen we, er is nog niets over bekend. Daarna wordt het ergens gebouwd — buiten deze repository, door een agent, voor één situatie. Als dat systeem af is en er mee gewerkt is, komt de intentie terug. Niet de code, maar wat er van de bedoeling overbleef nadat de werkelijkheid eroverheen is gegaan. Dat heet hier een **geoogste** intentie, en die krijgt een label dat zegt hoe het uitpakte, met de omstandigheden en de datum erbij.
+**Elke bijstelling is een correctie op een bedoeling die niet scherp genoeg was uitgesproken.** Dat is wat hier geoogst wordt. Niet het verslag van wat er gebouwd is, maar het verschil tussen wat er eerst gezegd werd en wat er gezegd had moeten worden.
 
-Een geoogste intentie is dus meer waard dan het voornemen waar hij uit voortkwam. Het verschil tussen die twee is precies waar iemand anders iets aan heeft.
+Daarom hoort bij elke bijgestelde regel de aanleiding. Niet alleen "de AI wacht tot de host is uitgesproken", maar dat die regel er staat omdat er zonder die regel doorheen werd gepraat. Zonder aanleiding kan een volgende lezer niet beoordelen of de regel ook in zijn situatie geldt — en dan is het een voorschrift geworden in plaats van een ervaring.
 
-Hoop en bewijs mogen naast elkaar staan, zolang elke regel zijn eigen herkomst draagt. De labels staan in `protocol/status.md`.
+Het criterium voor opname is niet hoe groot of hoe oud iets is, maar of er een ronde bijsturen overheen is gegaan. Eén dag intensief werken levert meer oogst op dan een systeem dat een half jaar ongestoord draait.
+
+Wat nog niet gebouwd is, hoort hier dus niet. Losse ideeën, plannen en onderzoeksbomen horen thuis waar ze vandaan komen. Dit is de uitloop, niet het archief.
 
 ## De aanpak
 
-1. **Eén intentie is één bestand.** Hij bestaat één keer, hoeveel mensen hem ook kunnen gebruiken.
-2. **Elke regel draagt zijn herkomst**, en als hij geoogst is ook zijn uitkomst.
+1. **Eén oogst is één bestand.** Hij bestaat één keer, hoeveel mensen hem ook kunnen gebruiken.
+2. **Elke regel draagt zijn aanleiding**, plus hoe het uitpakte en onder welke omstandigheden.
 3. **Geoogste regels worden nooit herschreven.** Een nieuwere komt eronder en mag de oudere tegenspreken. Wat vorig jaar niet werkte, werkt volgend kwartaal misschien wel.
-4. **Nieuwe ideeën komen binnen als issue**, niet als bestand. Ze worden pas een regel als ze een intentie aanscherpen of iets rapporteren dat daadwerkelijk gebouwd is.
+4. **Nieuwe ideeën komen binnen als issue**, niet als bestand. Ze worden pas een regel als ze daadwerkelijk zijn geprobeerd.
 5. **Lees `protocol/` voordat u iets toevoegt.** Zonder die vorm wordt dit een vergaarbak van proza.
 
 ## Wat waar staat
@@ -34,27 +36,29 @@ code-vrij/
 ├── LICENSE                CC0 1.0 — publiek domein
 │
 ├── protocol/              hoe deze repository werkt — lezen vóór u iets toevoegt
-│   ├── vorm.md                waaruit een intentie bestaat, en waar de grens ligt
-│   ├── status.md              de labels: herkomst, en uitkomst na het oogsten
-│   ├── groeipad.md            van voornemen tot geoogste intentie, stap voor stap
+│   ├── vorm.md                waaruit een oogst bestaat, en waar de grens ligt
+│   ├── status.md              de labels: uitkomst, omstandigheden, datum
+│   ├── groeipad.md            van bijsturen tot geoogste tekst, stap voor stap
 │   ├── niveaus.md             sandbox, persoonlijk, gedeeld, publiek
 │   └── bijdragen.md           hoe mensen en agents hier iets achterlaten
 │
 ├── achtergrond/           waarom deze repository bestaat
 │   └── ...                    de redenering, de aanleiding, het logboek
 │
-├── intenties/             de kern — wat we wilden, per onderwerp
+├── oogst/                 de kern — wat er te leren viel, per onderwerp
 │   └── ...                    één bestand per onderwerp, plat zolang dat kan
 │
-└── voor-wie/              leespaden naar de intenties die bij u passen
+└── voor-wie/              leespaden naar de oogst die bij u past
     └── ...                    één bestand per bestemming, zie hieronder
 ```
+
+Bestandsnamen beschrijven wat er bereikt wordt, niet hoe het project heette waar het uit kwam. `live-publiek-betrekken-met-ai.md`, niet de productnaam — die hoort binnenin, bij de omstandigheden. Zo kan iemand uit een heel ander vak zien of het hem aangaat.
 
 ## Over `voor-wie/`
 
 Een mappenstructuur kan maar één ordening aan, en dat is het onderwerp. Voor wie iets bedoeld is, is een tweede dimensie — die past er niet naast zonder alles dubbel op te schrijven.
 
-Daarom staat in `voor-wie/` per bestemming één bestand dat vertelt wie u bent, wat hier voor u te halen valt, en in welke volgorde u het leest. Het bevat zelf geen intenties, alleen verwijzingen. Zo bestaat elke intentie één keer en kan hij in vijf leespaden voorkomen.
+Daarom staat in `voor-wie/` per bestemming één bestand dat vertelt wie u bent, wat hier voor u te halen valt, en in welke volgorde u het leest. Het bevat zelf geen oogst, alleen verwijzingen. Zo bestaat elk bestand één keer en kan het in vijf leespaden voorkomen.
 
 Wat een bestemming is, staat open. Het kan een beroep zijn, een situatie, of een manier van leven. Ze worden geschreven zodra er iets is om naar te wijzen, niet alvast bedacht — want een indeling die vooraf vaststaat, bepaalt later wat er niet in past.
 
@@ -63,7 +67,7 @@ Staat uw bestemming er niet bij? Schrijf hem. Het is een paar alinea's plus een 
 ## Waar u begint
 
 Bent u een mens: `voor-wie/`, of anders `achtergrond/`.
-Bent u een agent: `AGENTS.md`, en daarna pas `intenties/`.
+Bent u een agent: `AGENTS.md`, en daarna pas `oogst/`.
 Wilt u hier iets toevoegen: `protocol/`.
 
 ## Licentie
